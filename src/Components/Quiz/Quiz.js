@@ -9,21 +9,18 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
 
-  // Initialize refs for options
   const optionRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
   const checkAns = (e, answer) => {
     if (!lock) {
       const isCorrect = question.answer === answer;
 
-      // Add the correct/incorrect class to the clicked option
       if (isCorrect) {
         e.target.classList.add('correct');
         setScore(prevScore => prevScore + 1);
       } else {
         e.target.classList.add('incorrect');
 
-        // Highlight the correct answer option
         const correctOptionIndex = parseInt(question.answer.replace('option', '')) - 1;
         const correctRef = optionRefs[correctOptionIndex];
         if (correctRef && correctRef.current) {
@@ -42,7 +39,6 @@ const Quiz = () => {
         setQuestion(data[nextIndex]);
         setLock(false);
 
-        // Reset classes for options
         optionRefs.forEach(ref => {
           if (ref.current) {
             ref.current.classList.remove('correct', 'incorrect');
