@@ -88,6 +88,38 @@ const data = [
         option3: "To perform asynchronous operations",
         option4: "To optimize the rendering of functional components",
         answer: "option2"
+    },
+    {
+        question: "What is the purpose of the useEffect hook in React?",
+        option1: "To manage component state",
+        option2: "To handle side effects in functional components",
+        option3: "To memoize component values",
+        option4: "To provide access to the component's lifecycle methods",
+        answer: "option2"
+    },
+    {
+        question: "Which React Hook is used for managing local component state?",
+        option1: "useCallback",
+        option2: "useMemo",
+        option3: "useReducer",
+        option4: "useState",
+        answer: "option4"
+    },
+    {
+        question: "How does React's useMemo hook optimize performance?",
+        option1: "By memoizing a function so it does not get recreated on every render",
+        option2: "By providing a mutable object that persists across renders",
+        option3: "By preventing re-rendering of a component if its props have not changed",
+        option4: "By storing data in local storage",
+        answer: "option1"
+    },
+    {
+        question: "What does the useContext hook allow you to do in a React application?",
+        option1: "Manage local component state",
+        option2: "Handle side effects",
+        option3: "Share state between components without prop drilling",
+        option4: "Optimize component rendering",
+        answer: "option3"
     }
 ];
 

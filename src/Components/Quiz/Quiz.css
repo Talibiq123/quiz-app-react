@@ -37,8 +37,8 @@
     margin: auto;
     width: 200px;
     height: 45px;
-    background-color: #ffffff;
-    color: 000000;
+    background-color: #000000;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     border-radius: 8px;
@@ -49,14 +49,63 @@
     font-size: 18px;
 }
 
-.correct {
+.container .correct {
     background: #d4edda;
     border: #d4edda;
-    color: #155724;
 }
 
-.incorrect {
+.container .incorrect {
     background: #f8d7da;
     border: #f5c6cb;
-   color: #721c24;
 }
+
+/* Final Score Section Styles */
+.final-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .final-score h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .final-score p {
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 0;
+  }
+  
+  .final-score .score-value {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .final-score button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .final-score button:hover {
+    background-color: #0056b3;
+  }
+  
+  .final-score button:focus {
+    outline: none;
+  }
+  
